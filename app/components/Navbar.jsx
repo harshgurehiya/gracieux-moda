@@ -35,26 +35,30 @@ const Navbar = () => {
             text="Products"
             onClick={handleCloseSidebar}
           />
-          <NavItem href="/about" text="About Us" onClick={handleCloseSidebar} />
+          <NavItem
+            href="/our-story"
+            text="Our Story"
+            onClick={handleCloseSidebar}
+          />
           <NavItem
             href="/contact"
             text="Contact Us"
             onClick={handleCloseSidebar}
           />
-          <button
+          {/* <button
             onClick={() => setDarkMode(!darkMode)}
             className="bg-gray-200 dark:bg-gray-600 text-black dark:text-white p-2 rounded"
           >
             {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
+          </button> */}
         </div>
         <div className="md:hidden ml-4 flex items-center space-x-4">
-          <button
+          {/* <button
             onClick={() => setDarkMode(!darkMode)}
             className="bg-gray-200 dark:bg-gray-600 text-black dark:text-white p-2 rounded"
           >
             {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
+          </button> */}
           <button
             className="bg-gray-200 dark:bg-gray-600 text-black dark:text-white p-2 rounded"
             onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -84,8 +88,8 @@ const Navbar = () => {
                 onClick={handleCloseSidebar}
               />
               <NavItemMobile
-                href="/about"
-                text="About Us"
+                href="/our-story"
+                text="Our Story"
                 onClick={handleCloseSidebar}
               />
               <NavItemMobile
@@ -93,12 +97,12 @@ const Navbar = () => {
                 text="Contact Us"
                 onClick={handleCloseSidebar}
               />
-              <button
+              {/* <button
                 onClick={() => setDarkMode(!darkMode)}
                 className="bg-gray-200 dark:bg-gray-600 text-black dark:text-white p-2 rounded"
               >
                 {darkMode ? <FaSun /> : <FaMoon />}
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

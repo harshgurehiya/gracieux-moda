@@ -68,6 +68,14 @@ const Carousel = () => {
             className="object-cover rounded-lg"
           />
         </SwiperSlide>
+        <SwiperSlide className="w-64 h-64">
+          <Image
+            src="/images/slide6.jpg"
+            alt="Image 3"
+            layout="fill"
+            className="object-cover rounded-lg"
+          />
+        </SwiperSlide>
         {/* Add more slides as needed */}
       </Swiper>
     </div>
