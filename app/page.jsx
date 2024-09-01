@@ -1,6 +1,7 @@
 import Carousel from "./components/Carousel";
 import Category from "./components/Category";
 import MultipleLottieAnimations from "./components/lottie/MultipleLottieAnimation";
+import VideoSection from "./components/videoSection/VideoSection";
 import "./globals.css";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <MultipleLottieAnimations />
         <Carousel />
         <Category />
+        <VideoSection />
       </div>
     </main>
   );
