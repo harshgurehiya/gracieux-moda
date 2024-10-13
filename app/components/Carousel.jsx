@@ -1,11 +1,17 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import Image from "next/legacy/image";
 
 const Carousel = () => {
@@ -25,7 +31,11 @@ const Carousel = () => {
         }}
         pagination={{ clickable: true }}
         navigation={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide className="w-64 h-64">
@@ -55,7 +65,7 @@ const Carousel = () => {
         <SwiperSlide className="w-64 h-64">
           <Image
             src="/images/slide4.jpg"
-            alt="Image 3"
+            alt="Image 4"
             layout="fill"
             className="object-cover rounded-lg"
           />
@@ -63,7 +73,7 @@ const Carousel = () => {
         <SwiperSlide className="w-64 h-64">
           <Image
             src="/images/slide5.jpg"
-            alt="Image 3"
+            alt="Image 5"
             layout="fill"
             className="object-cover rounded-lg"
           />
@@ -71,7 +81,7 @@ const Carousel = () => {
         <SwiperSlide className="w-64 h-64">
           <Image
             src="/images/slide6.jpg"
-            alt="Image 3"
+            alt="Image 6"
             layout="fill"
             className="object-cover rounded-lg"
           />
